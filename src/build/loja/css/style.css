@@ -1,0 +1,311 @@
+/* Estilo Geral */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, #1a1a1d, #2e2e38);
+  color: #ffffff;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(45deg, #3500a0, #006377);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+header .lista {
+  display: flex;
+  gap: 20px;
+}
+
+header .lista a {
+  color: #ddd;
+  text-decoration: none;
+  padding: 15px 25px;
+  font-weight: 500;
+  transition: color 0.3s, border 0.3s;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+header .lista a:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+/* Menu */
+#Menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px;
+  margin-bottom: 160px;
+  gap: 30px;
+}
+
+.texto h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.texto p {
+  color: #cccccc;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.texto span {
+  color: #5600fc;
+  font-weight: bold;
+}
+
+.button {
+  width: 230px;
+  height: 55px;
+  border-radius: 15px;
+  background-color: #5600fc;
+  color: #ffffff;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #4601d1;
+  transform: scale(1.05);
+}
+
+.imagem img {
+  width: 300px;
+  height: 500px;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.imagem img:hover {
+  transform: scale(1.02);
+}
+
+/* Produtos */
+#produtos {
+  padding: 60px 30px;
+  text-align: center;
+  margin-bottom: 260px;
+}
+
+#produtos h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.produto-lista {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.produto {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.produto p {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-bottom: 15px;
+}
+
+.produto .button {
+  width: 100%;
+  padding: 10px;
+}
+
+.produto:hover {
+  transform: scale(1.05);
+}
+
+/* Novidades */
+
+#novidades {
+  padding: 60px 30px;
+  text-align: center;
+  background: linear-gradient(to bottom, #1a1a1d, #2e2e38);
+  color: #ffffff;
+}
+
+#novidades h2 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.novidades-descricao {
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.macbook {
+  display: flex;
+  justify-content: center;
+}
+
+.macbook img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.macbook img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #1a1a1d;
+}
+
+.foim img {
+  width: 50px;
+  transition: transform 0.3s, filter 0.3s;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.foim img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  /* Seção de Início */
+  #inicio {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Texto na seção de início */
+  .texto {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* Imagem responsiva */
+  .imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+
+  /* Lista de Produtos */
+  .produto-lista {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .produto-item {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Botão e cabeçalho */
+  .button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  header .logo {
+    font-size: 1.8rem;
+  }
+
+  header .lista a {
+    display: block;
+    padding: 10px 0;
+  }
+
+  /* Novidades - Seção Mac */
+  #novidades {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  #novidades h2 {
+    font-size: 2.5rem;
+  }
+
+  .novidades-descricao {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .macbook img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Footer Ajustado */
+  footer {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .foim img {
+    width: 40px;
+    position: static;
+    margin-top: 20px;
+  }
+}

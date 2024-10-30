@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastre-se</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Cadastre-se para prosseguir com a compra</h1>
+    <div class="div">
+      <form
+        id="register-form"
+        onsubmit="event.preventDefault(); registerUser();"
+      >
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="senha" placeholder="Senha" required />
+        <button type="submit">Cadastrar</button>
+        <a class="link" href="../login/index2.html">Faça seu login</a>
+      </form>
+    </div>
+  </body>
+</html>
