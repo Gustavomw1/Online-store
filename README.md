@@ -33,7 +33,7 @@ cd nome-do-repositorio
 //Navege para a pasta do projeto
 
 npm install
-Baixar dependencias
+//Baixar dependencias
 
 code .
 //Na pasta do repositorio digite (code .) para abrir o visual studio
