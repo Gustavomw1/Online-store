@@ -41,3 +41,5 @@ code .
 npm run dev:server
 //iniciar servdior 
 
+No visual studio code, apertar botao direito do mouse e clicar em live server
+//entar no site
