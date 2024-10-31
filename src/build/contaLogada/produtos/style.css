@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, #1a1a1d, #2e2e38);
+  color: #ffffff;
+}
+
+#produtos {
+  padding: 60px 30px;
+  text-align: center;
+  margin-bottom: 260px;
+}
+
+#produtos h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.produto-lista {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.produto {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.produto p {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-bottom: 15px;
+}
+
+.produto .button {
+  width: 100%;
+  padding: 10px;
+}
+
+.produto:hover {
+  transform: scale(1.05);
+}
+
+.button {
+  width: 230px;
+  height: 55px;
+  border-radius: 15px;
+  background-color: #5600fc;
+  color: #ffffff;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #4601d1;
+  transform: scale(1.05);
+}
+
+.link {
+  margin-top: 30px;
+  width: 400px;
+  height: 50px;
+  background-color: #5600fc;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+}
+
+.link:hover {
+  background-color: #4601d1;
+  transform: scale(1.05);
+}
